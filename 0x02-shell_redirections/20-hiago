@@ -1,2 +1,2 @@
 #!/bin/bash
-tr
+cleaned_line=$(echo "$line" | tr -d 'cC')
