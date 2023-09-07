@@ -1,2 +1,10 @@
 #!/bin/bash
-cleaned_line=$(echo "$line" | tr -d 'cC')
+#!/bin/bash
+
+# Read input from standard input (stdin)
+while read -r line; do
+    # Use tr command to delete all occurrences of 'c' and 'C'
+    cleaned_line=$(echo "$line" | tr -d 'cC')
+    # Print the cleaned line to stdout
+    echo "$cleaned_line"
+done
